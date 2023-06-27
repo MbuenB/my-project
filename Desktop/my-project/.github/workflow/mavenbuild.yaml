@@ -2,10 +2,7 @@ name: maveninstall
 on: pull_request
 jobs: 
   installjava:
-    runs-on: mbuensrunner
+    runs-on: self-hosted
     steps:  
       - name: install java
         run: sudo yum install java -y
-      - name: install maven
-        run: sudo yum install maven -y
-    
